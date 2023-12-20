@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* .root {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: aqua;
+} */
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  background-color: aqua;
+}
