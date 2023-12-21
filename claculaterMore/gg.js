@@ -13,7 +13,7 @@
 // startBtn.innerText = "start";
 // header.appendChild(startBtn);
 
-startBtn.addEventListener("click", startGame);
+// startBtn.addEventListener("click", startGame);
 
 // function startGame() {
 //   const boxes = document.createElement("div");
@@ -76,9 +76,29 @@ startBtn.addEventListener("click", startGame);
 //     boxes.appendChild(box);
 //     if (i == rand) {
 //       box.style.backgroundColor = `rgb( ${red - 50},${green},${blue})`;
-box.addEventListener("click", startGame);
+// box.addEventListener("click", startGame);
 //     } else {
 //       box.style.backgroundColor = `rgb( ${red},${green},${blue})`;
 //     }
 //   }
 // root.appendChild(boxes);
+
+function addBoxes() {
+  const red = Math.floor(Math.random() * 255);
+  const green = Math.floor(Math.random() * 255);
+  const blue = Math.floor(Math.random() * 255);
+  const randomColor = `rgb(${red}, ${green}, ${blue})`;
+  const random = Math.floor(Math.random() * 8);
+
+  for (i = 0; i < 9; i++) {
+    let box = document.createElement("div");
+    box.setAttribute("class", "box");
+    box.setAttribute("id", i);
+    if (i == random) {
+      box.style.backgroundColor = `rgb(${red - 50}, ${green}, ${blue})`;
+    } else {
+      box.style.backgroundColor = randomColor;
+    }
+    boxes.appendChild(box);
+  }
+}

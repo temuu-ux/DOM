@@ -6,7 +6,7 @@ root.appendChild(header);
 
 let levelC = 0;
 const level = document.createElement("p");
-level.innerText = "Level " + levelC;
+level.innerText = "level " + levelC;
 header.appendChild(level);
 
 const startBtn = document.createElement("button");
@@ -76,11 +76,11 @@ function startGame() {
 //     } else {
 //       startGame();
 //     }
-// }else {
-//         chanceC--;
-//         if (chanceC == 0) {
+// } else {
+//         scoreR--;
+//         if (scoreR == 0) {
 //           gameBody.innerHTML = "LOSE";
 //         }
-//         chance.innerText = "Chance " + chanceC;
+//         score.innerText = "score " + scoreR;
 //       }
 //   );
