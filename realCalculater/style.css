@@ -1,0 +1,30 @@
+#root {
+  width: 700px;
+  /* height: 800px; */
+
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cal {
+  width: 700px;
+  height: 95px;
+  background-color: bisque;
+}
+.calBtn {
+  margin-top: 30px;
+
+  /* background-color: antiquewhite; */
+}
+.allBtn {
+  width: 170px;
+  height: 90px;
+  border-radius: 70px;
+  border: 1px solid black;
+  margin-top: 10px;
+  background-color: #333;
+  font-size: 30px;
+}

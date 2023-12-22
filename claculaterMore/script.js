@@ -62,8 +62,8 @@ function startGame() {
       }
     });
   }
-  root.appendChild(boxes);
 }
+root.appendChild(boxes);
 // box.addEventListener ("click",(e) => {
 //     let colorBox = e.target.id;
 //     if (colorBox == rand) {
