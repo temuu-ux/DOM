@@ -1,19 +1,18 @@
 // let root = document.getElementById("root");
 
-// let red = Math.floor(Math.random() * 255);
-// let blue = Math.floor(Math.random() * 255);
-// let green = Math.floor(Math.random() * 255);
-
-// root.style.backgroundColor = `rgb (${red},${blue},${green})`;
-
-function changeColor() {
-  document.getElementById("root").style.backgroundColor = "Green";
-  for (let i = 0; i < 100; i++) {
-    if (document.getElementById("root").style.backgroundColor == "Green") {
-      document.getElementById("root").style.backgroundColor = "blueviolet";
-    } else {
-      document.getElementById("root").style.backgroundColor = "Green";
-    }
-  }
+function changeF() {
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  document.getElementById("division").style.backgroundColor =
+    "rgb(" + red + "," + green + "," + blue + ")";
+  document.getElementById("colorCode").innerHTML =
+    "rgb(" + red + "," + green + "," + blue + ")";
+  document.getElementById("button").style.backgroundColor =
+    "rgb(" + (255 - red) + "," + (255 - green) + "," + (255 - blue) + ")";
 }
-changeColor;
+
+// function y() {
+//   console.log("aslaa");
+// }
+// y();

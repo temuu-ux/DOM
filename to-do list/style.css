@@ -8,12 +8,13 @@
   margin-top: 20px;
 }
 .header {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  font-size: 32px;
 }
 .conteiner {
   display: flex;
   gap: 10px;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin-top: 20px;
 }
 .input {
