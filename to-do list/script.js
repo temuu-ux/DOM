@@ -9,21 +9,35 @@ const conteiner = document.createElement("div");
 conteiner.setAttribute("class", "conteiner");
 root.appendChild(conteiner);
 
-const input = document.createElement("input");
+// list
+const list = document.createElement("div");
+list.setAttribute("class", "list");
+header.appendChild(list);
 
-// input.setAttribute("class", "input");
-input.setAttribute = "placeholder ,Enter task here ...";
-conteiner.appendChild(input);
+const input = document.createElement("input");
+input.setAttribute("placeholder", "enter task here...");
+input.setAttribute("id", "");
+list.appendChild(input);
 
 const AddTask = document.createElement("button");
 AddTask.setAttribute("class", "button");
 AddTask.innerText = "Add Task";
 conteiner.appendChild(AddTask);
 
-// AddTask.addEventListener("click", add);
+AddTask.addEventListener("click", add);
 
-// function add() {
-//   const findS = document.createElement("input");
-//   findS.innerText = "inputG";
-//   root.appendChild(findS);
-// }
+function add() {
+  const task = document.createElement("div");
+  task.innerText = input.value;
+  const deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "Delete";
+
+  list.appendChild(task);
+  task.appendChild(deleteBtn);
+
+  deleteBtn.addEventListener("click", deleted);
+
+  function deleted() {
+    task.remove();
+  }
+}
